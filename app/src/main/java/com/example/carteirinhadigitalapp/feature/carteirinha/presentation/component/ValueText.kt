@@ -1,13 +1,11 @@
-package com.example.carteirinhadigitalapp
+package com.example.carteirinhadigitalapp.feature.carteirinha.presentation.component
 
-import androidx.compose.foundation.layout.padding
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.TextUnit
-import androidx.compose.ui.unit.dp
 
 @Composable
 fun ValueText(
@@ -22,8 +20,7 @@ fun ValueText(
         fontWeight = fontWeight,
         fontFamily = MaterialTheme.typography.titleLarge.fontFamily,
         lineHeight = MaterialTheme.typography.titleLarge.lineHeight,
-        modifier = modifier
-            .padding(8.dp),
+        modifier = modifier,
         softWrap = true,
         color = MaterialTheme.colorScheme.onSurface
 
