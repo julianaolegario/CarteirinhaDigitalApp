@@ -35,6 +35,7 @@ fun HomeContent(
             alignment = Alignment.CenterVertically
         )
     ) {
+        
 
         Button (
             onClick = onLoginClick,
@@ -48,7 +49,7 @@ fun HomeContent(
                 MaterialTheme.colorScheme.primary
             )
         ) {
-            Text("Carteirinha")
+            Text("Sair")
         }
     }
 }
