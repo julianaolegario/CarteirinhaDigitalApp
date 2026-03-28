@@ -15,13 +15,14 @@ fun HomeScreen(
     modifier: Modifier = Modifier,
     navController: NavController
 ) {
-    var carteirinha by remember { mutableStateOf("") }
+    var nomeUsuario by remember { mutableStateOf("Juliana") }
 
     HomeContent(
+        nomeUsuario = nomeUsuario,
         onLoginClick = {
-            navController.navigate(
-                Routes.Carteirinha.route
-            )
+            navController.navigate( Routes.Login.route) {
+                popUpTo(Routes.Home.route) { inclusive = true }
+            }
         },
         modifier = modifier
     )
