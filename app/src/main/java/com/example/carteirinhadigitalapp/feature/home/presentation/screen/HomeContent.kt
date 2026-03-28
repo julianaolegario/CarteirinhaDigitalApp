@@ -35,6 +35,10 @@ fun HomeContent(
             alignment = Alignment.CenterVertically
         )
     ) {
+        Text(
+            text = "Bem-vindo, $nomeUsuario",
+            style = MaterialTheme.typography.headlineSmall
+        )
         
 
         Button (
@@ -62,6 +66,7 @@ fun HomeContent(
 fun PreviewHomeContentClaro() {
     CarteirinhaDigitalAppTheme(darkTheme = true) {
         HomeContent(
+            nomeUsuario = "Juliana"
             modifier = Modifier
                 .fillMaxSize()
                 .padding(16.dp)
@@ -76,6 +81,6 @@ fun PreviewHomeContentClaro() {
 @Composable
 fun PreviewLHomeContentEscuro() {
     CarteirinhaDigitalAppTheme(darkTheme = false) {
-        HomeContent( )
+        HomeContent(nomeUsuario = "Juliana" )
     }
 }
