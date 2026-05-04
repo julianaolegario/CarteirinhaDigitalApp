@@ -23,8 +23,8 @@ fun LoginScreen(
     LoginContent(
         login = login,
         senha = senha,
-        onLoginChange = { it },
-        onSenhaChange = { it },
+        onLoginChange = { login = it },
+        onSenhaChange = { senha =  it },
         onLoginClick = {
             navController.navigate(
                 Routes.Carteirinha.route
