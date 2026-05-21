@@ -1,4 +1,4 @@
-package com.example.carteirinhadigitalapp.feature.carteirinha.presentation.screen
+package com.example.carteirinhadigitalapp.feature.unidadecurricular.presentation.screen
 
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.padding
@@ -7,26 +7,27 @@ import androidx.compose.runtime.getValue
 import androidx.compose.ui.Modifier
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
 import androidx.lifecycle.viewmodel.compose.viewModel
+
 import com.example.carteirinhadigitalapp.core.designsystem.component.AppDrawerItem
 import com.example.carteirinhadigitalapp.core.designsystem.component.AppScaffold
-import com.example.carteirinhadigitalapp.feature.carteirinha.presentation.CarteirinhaEvent
-import com.example.carteirinhadigitalapp.feature.carteirinha.presentation.CarteirinhaViewModel
+import com.example.carteirinhadigitalapp.feature.unidadecurricular.presentation.UnidadeCurricularEvent
+import com.example.carteirinhadigitalapp.feature.unidadecurricular.presentation.UnidadeCurricularViewModel
 
 @Composable
-fun CarteirinhaScreen(
+fun UnidadeCurricularScreen(
     usuarioNome: String,
     usuarioDescricao: String,
     drawerItems: List<AppDrawerItem>,
     onLogoutClick: () -> Unit,
     modifier: Modifier = Modifier,
     onBackClick: () -> Unit,
-    viewModel: CarteirinhaViewModel = viewModel()
+    viewModel: UnidadeCurricularViewModel = viewModel()
 ) {
     val uiState by viewModel.uiState.collectAsStateWithLifecycle()
 
-    AppScaffold (
-        title = "Carteirinha",
-        subtitle = "Documento digital do aluno",
+    AppScaffold(
+        title = "Unidades Curriculares",
+        subtitle = "Notas, médias e faltas",
         usuarioNome = usuarioNome,
         usuarioDescricao = usuarioDescricao,
         drawerItems = drawerItems,
@@ -34,11 +35,11 @@ fun CarteirinhaScreen(
         showBackButton = true,
         onBackClick = onBackClick
     ) { innerPadding ->
-        CarteirinhaContent(
+        UnidadeCurricularContent(
             uiState = uiState,
             onEvent = { event ->
                 when (event) {
-                    CarteirinhaEvent.OnVoltarClick -> onBackClick()
+                    UnidadeCurricularEvent.OnVoltarClick -> onBackClick()
                     else -> viewModel.onEvent(event)
                 }
             },
