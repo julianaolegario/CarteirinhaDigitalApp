@@ -28,6 +28,7 @@ fun PerfilAluno(
     status: String,
     modifier: Modifier = Modifier
 ) {
+
     Column(
         modifier = modifier.fillMaxWidth(),
         horizontalAlignment = Alignment.CenterHorizontally,

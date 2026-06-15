@@ -34,6 +34,7 @@ fun AppScaffold(
                     item.copy(
                         onClick = {
                             scope.launch { drawerState.close() }
+
                             item.onClick()
                         }
                     )

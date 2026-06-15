@@ -21,6 +21,7 @@ class CarteirinhaViewModel(
         carregarCarteirinha()
     }
 
+
     fun onEvent(event: CarteirinhaEvent) {
         when (event) {
             CarteirinhaEvent.OnCarregarDados,

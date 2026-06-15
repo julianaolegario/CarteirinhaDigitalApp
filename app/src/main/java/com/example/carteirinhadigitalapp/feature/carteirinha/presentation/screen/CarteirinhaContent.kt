@@ -117,6 +117,7 @@ private fun CarteirinhaDadosContent(
             modifier = Modifier.fillMaxWidth(0.6f)
         )
     }
+
 }
 
 @Preview(showBackground = true, showSystemUi = true)

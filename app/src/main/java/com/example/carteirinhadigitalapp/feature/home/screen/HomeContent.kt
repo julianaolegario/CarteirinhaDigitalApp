@@ -44,6 +44,7 @@ fun HomeContent(
         horizontalAlignment = Alignment.CenterHorizontally
     ) {
         Text(
+
             text = "Olá, ${uiState.nomeAluno}",
             style = MaterialTheme.typography.headlineMedium,
             color = MaterialTheme.colorScheme.onBackground

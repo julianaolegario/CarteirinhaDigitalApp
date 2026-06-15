@@ -22,6 +22,7 @@ fun CarteirinhaScreen(
     onBackClick: () -> Unit,
     viewModel: CarteirinhaViewModel = viewModel()
 ) {
+
     val uiState by viewModel.uiState.collectAsStateWithLifecycle()
 
     AppScaffold (

@@ -29,6 +29,7 @@ class UnidadeCurricularViewModel(
         }
     }
 
+
     private fun carregarUnidadesCurriculares() {
         viewModelScope.launch {
             _uiState.update {

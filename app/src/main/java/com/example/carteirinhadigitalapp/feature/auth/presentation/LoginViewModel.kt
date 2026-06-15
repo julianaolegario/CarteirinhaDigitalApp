@@ -14,6 +14,7 @@ class LoginViewModel(
     private val repository: AuthRepository = FakeAuthRepository()
 ) : ViewModel() {
 
+
     private val _uiState = MutableStateFlow(LoginUiState())
     val uiState: StateFlow<LoginUiState> = _uiState.asStateFlow()
 

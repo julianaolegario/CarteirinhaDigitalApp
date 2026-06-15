@@ -34,6 +34,7 @@ fun UnidadeCurricularContent(
             .safeDrawingPadding()
             .padding(16.dp)
     ) {
+
         when {
             uiState.isLoading -> {
                 Column(

@@ -29,6 +29,7 @@ import com.example.carteirinhadigitalapp.feature.unidadecurricular.presentation.
 fun AppNavHost(
     navController: NavHostController
 ) {
+
     var loggedUser by remember { mutableStateOf<LoggedUser?>(null) }
     val backStackEntry by navController.currentBackStackEntryAsState()
     val currentRoute = backStackEntry?.destination?.route

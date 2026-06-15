@@ -23,6 +23,7 @@ fun UnidadeCurricularCard(
     unidadeCurricular: UnidadeCurricular,
     modifier: Modifier = Modifier
 ) {
+
     Card (
         modifier = modifier.fillMaxWidth(),
         shape = RoundedCornerShape(16.dp),

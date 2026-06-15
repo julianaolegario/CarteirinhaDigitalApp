@@ -27,6 +27,7 @@ fun AppDrawerContent(
     items: List<AppDrawerItem>,
     onLogoutClick: () -> Unit,
     modifier: Modifier = Modifier
+
 ) {
     ModalDrawerSheet(modifier = modifier.fillMaxHeight()) {
         Column(

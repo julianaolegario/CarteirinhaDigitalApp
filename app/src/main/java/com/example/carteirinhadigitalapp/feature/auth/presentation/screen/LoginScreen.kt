@@ -24,6 +24,7 @@ import com.example.carteirinhadigitalapp.feature.auth.presentation.LoginViewMode
 
 @Composable
 fun LoginScreen(
+
     modifier: Modifier = Modifier,
     onLoginSuccess: (UsuarioLogado) -> Unit,
     viewModel: LoginViewModel = viewModel ()

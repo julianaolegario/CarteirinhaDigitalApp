@@ -19,6 +19,7 @@ fun InfoAluno(
     fontSize: TextUnit = MaterialTheme.typography.titleLarge.fontSize,
     fontWeight: FontWeight = MaterialTheme.typography.titleLarge.fontWeight ?: FontWeight.Normal,
 
+
     ) {
     Row(
         modifier = modifier,

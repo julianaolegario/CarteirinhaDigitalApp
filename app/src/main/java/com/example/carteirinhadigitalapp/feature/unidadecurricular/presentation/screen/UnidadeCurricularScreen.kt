@@ -25,6 +25,7 @@ fun UnidadeCurricularScreen(
 ) {
     val uiState by viewModel.uiState.collectAsStateWithLifecycle()
 
+
     AppScaffold(
         title = "Unidades Curriculares",
         subtitle = "Notas, médias e faltas",

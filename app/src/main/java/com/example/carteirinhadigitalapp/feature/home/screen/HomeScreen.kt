@@ -25,6 +25,7 @@ fun HomeScreen(
 ) {
     val uiState by viewModel.uiState.collectAsStateWithLifecycle()
 
+
     AppScaffold (
         title = "Início",
         subtitle = "Área do aluno",
