@@ -92,7 +92,8 @@ fun LoginContent(
             modifier = Modifier.fillMaxWidth(0.6f),
             shape = RoundedCornerShape(size = 9.dp),
             colors = ButtonDefaults.buttonColors(
-                containerColor = MaterialTheme.colorScheme.background
+                containerColor = MaterialTheme.colorScheme.background,
+                contentColor = MaterialTheme.colorScheme.primary
             ),
             border = BorderStroke(
                 2.dp,

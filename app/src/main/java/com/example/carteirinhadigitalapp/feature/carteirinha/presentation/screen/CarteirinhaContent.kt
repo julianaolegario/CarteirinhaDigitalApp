@@ -126,13 +126,13 @@ fun CarteirinhaContentPreviewClaro() {
         CarteirinhaContent(
             uiState = CarteirinhaUiState(
                 carteirinha = Carteirinha(
-                    nome = "Rafael Costa",
+                    nome = "Juliana Snatos Olegario",
                     curso = "Técnico em Desenvolvimento de Sistemas",
                     turma = "4DEVM-T1",
-                    matricula = "20260001",
+                    matricula = "24247616",
                     unidade = "SENAI Anchieta",
                     status = "Ativo",
-                    qrCodeContent = "20260001"
+                    qrCodeContent = "24247616"
                 )
             ),
             onEvent = {}

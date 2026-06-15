@@ -11,7 +11,7 @@ class FakeAuthRepository : AuthRepository {
             Result.success(
                 UsuarioLogado(
                     id = "1",
-                    nome = "Rafael Costa",
+                    nome = "Juliana Santos Olegario",
                     token = "token-fake-para-aula"
                 )
             )

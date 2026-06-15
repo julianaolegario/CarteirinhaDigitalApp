@@ -9,13 +9,13 @@ class FakeCarteirinhaRepository : CarteirinhaRepository {
 
         return Result.success(
             Carteirinha(
-                nome = "Rafael Costa",
+                nome = "Juliana Santos Olegario",
                 curso = "Técnico em Desenvolvimento de Sistemas",
                 turma = "4DEVM-T1",
-                matricula = "20260001",
+                matricula = "24247616",
                 unidade = "SENAI Anchieta",
                 status = "Ativo",
-                qrCodeContent = "MATRICULA:20260001;ALUNO:Rafael Costa;TURMA:4DEVM-T1"
+                qrCodeContent = "MATRICULA:24247616;ALUNO:Juliana Santos Olegario;TURMA:4DEVM-T1"
             )
         )
     }
